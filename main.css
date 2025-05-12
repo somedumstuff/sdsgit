@@ -1,0 +1,97 @@
+body{
+    background-color: black;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+
+@font-face {
+    font-family: VCR;
+    src: url(vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);
+}
+
+*{
+    transition:all 2s;
+}
+
+#gallery{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap:5px;
+    width: 1000%;
+    
+   
+}
+
+video{
+    height: 80vh;
+    width: 800px;
+    object-fit: cover;
+}
+
+.gallery_item{
+    position: relative;
+    padding: 0 !important;
+    max-width: 80%;
+}
+
+.gallery_item > img{
+    height: 80vh;
+    object-fit: cover;
+}
+
+.text{
+    color: white;  
+    font-family: 'VCR';
+}
+
+#nav_bar{
+    width: 100%;
+    display: flex;
+}
+
+#title{
+    font-size: 25pt;
+}
+
+#subtitle{
+    font-size: 10px;
+}
+
+#buttons{
+    position: relative;
+    margin-left: auto;
+    align-items:end;
+    font-size: 20px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    
+}
+
+
+#reset {
+    margin-right: 15px;
+}
+
+#reset, #next{
+    border: 1px white solid;
+    padding: 5px;
+    transition:all .5s;
+}
+
+ #next:hover {
+    background-color: white;
+    color: black;
+    transition:all .5s;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: white;
+    color: black;
+    transition:all .5s;
+    cursor: pointer;
+}

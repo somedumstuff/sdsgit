@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    padding: 20px;
+    
+}
+
+@font-face {
+    font-family: VCR;
+    src: url(vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);
+}
+
+*{
+    transition:all 2s;
+}
+
+#gallery{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    column-gap:5px;
+  height: 100%;
+    width: 100%;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery_item{
+    position: relative;
+    padding: 0 !important;
+   height: 100%;
+    width: 100%;
+}
+
+.gallery_item > img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.text{
+    color: white;  
+    font-family: 'VCR';
+}
+
+#title{
+    font-size: 25pt;
+}
+
+
+#subtitle{
+    font-size: 15px;
+}
