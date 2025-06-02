@@ -26,7 +26,7 @@ body{
 
 video{
     height: 80vh;
-    width: 800px;
+    width: auto;
     object-fit: cover;
 }
 
