@@ -5,7 +5,7 @@ var reset = document.getElementById("reset")
 
 
 next.addEventListener("click", (event) => {
-  if (left >= 30) {
+  if (left >= 50) {
     left = 0;
     gallery.style.transform = "translateX(0%)"
   }
