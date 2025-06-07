@@ -72,24 +72,13 @@ video{
 }
 
 
-#reset {
-    margin-right: 15px;
-}
-
-#reset, #next{
+#one, #two, #three, #four, #five{
     border: 1px white solid;
     padding: 5px;
     transition:all .5s;
 }
 
- #next:hover {
-    background-color: white;
-    color: black;
-    transition:all .5s;
-    cursor: pointer;
-}
-
-#reset:hover {
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover {
     background-color: white;
     color: black;
     transition:all .5s;
