@@ -3,10 +3,6 @@ var gallery = document.getElementById("gallery")
 var left = 0
 var reset = document.getElementById("reset")
 
-for (const child of buttons.childNodes) {
-  console.log(child)
-}
-
 
 buttons.addEventListener("click", (event) => {
 let childrenId = event["target"]["attributes"][0]
