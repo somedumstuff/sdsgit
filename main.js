@@ -1,34 +1,48 @@
-var next = document.getElementById("next")
+let buttons = document.getElementById("buttons")
 var gallery = document.getElementById("gallery")
 var left = 0
 var reset = document.getElementById("reset")
 
+for (const child of buttons.childNodes) {
+  console.log(child)
+}
 
-next.addEventListener("click", (event) => {
-  if (left >= 50) {
-    left = 0;
+
+buttons.addEventListener("click", (event) => {
+let childrenId = event["target"]["attributes"][0]
+
+console.log(childrenId["value"])
+
+  if (childrenId["value"] == "one"){
+    console.log("1")
     gallery.style.transform = "translateX(0%)"
   }
-  else {
-    left = left + 5
-    console.log(left)
-    gallery.style.transform = "translateX(" + "-" + left + "%)"
-    console.log(gallery.style.transform)
+  else if (childrenId["value"] == "two"){
+    console.log("2")
+    gallery.style.transform = "translateX(-15%)"
   }
 
-});
-
-reset.addEventListener("click", (event) => {
-
-  left = 0;
-  gallery.style.transform = "translateX(0%)"
+  else if (childrenId["value"] == "three"){
+    console.log("2")
+    gallery.style.transform = "translateX(-25%)"
+  }
+  
+  else if (childrenId["value"] == "four"){
+    console.log("2")
+    gallery.style.transform = "translateX(-35%)"
+  }
+  
+  else if (childrenId["value"] == "five"){
+    console.log("2")
+    gallery.style.transform = "translateX(-45%)"
+  }
 
 });
 
 let details = navigator.userAgent
 let css = document.getElementById("css")
 let regexp = /android|iphone|kindle|ipad/i
-let buttons = document.getElementById("buttons")
+
 let isMobileDevice = regexp.test(details)
 let desc = document.getElementById("desc")
 if (isMobileDevice) {
