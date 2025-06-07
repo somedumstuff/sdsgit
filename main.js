@@ -15,7 +15,7 @@ console.log(childrenId["value"])
   }
   else if (childrenId["value"] == "two"){
     console.log("2")
-    gallery.style.transform = "translateX(-15%)"
+    gallery.style.transform = "translateX(-12%)"
   }
 
   else if (childrenId["value"] == "three"){
